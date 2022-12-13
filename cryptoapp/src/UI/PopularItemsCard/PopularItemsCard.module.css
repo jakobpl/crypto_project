@@ -1,0 +1,103 @@
+.card {
+  height: 48rem;
+  width: 32rem;
+  border: solid 1px #333;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+.card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  /* background-color: #333; */
+}
+.card_header {
+  padding: 1rem;
+  align-self: flex-start;
+}
+
+.profile_img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  border: solid 4px #8364e2;
+  object-fit: cover;
+  object-position: 0px 0px;
+  /* scale: 1.1; */
+}
+
+.img_container {
+  height: 16rem;
+  width: 28.4rem;
+  overflow: hidden;
+}
+.img_container img {
+  width: 100%;
+}
+
+.nft_info {
+  width: 28.4rem;
+  font-size: 1.6rem;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.title {
+  font-weight: 600;
+}
+.price {
+  font-weight: 600;
+  color: #777;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn_buy_now {
+  border: solid 2px transparent;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #8364e2;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  height: 3rem;
+  width: 8rem;
+}
+
+.btn_buy_now:hover {
+  background-color: transparent;
+  color: #8364e2;
+  border: solid 2px #8364e2;
+}
+
+.fav_container {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.favorite_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: salmon;
+  /* color: white; */
+  transition: all 0.2s;
+}
+.favorite_icon:hover {
+  color: red;
+}
+.fav_count {
+  font-size: 2rem;
+}

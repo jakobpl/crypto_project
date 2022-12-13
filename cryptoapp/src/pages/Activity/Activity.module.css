@@ -1,0 +1,94 @@
+.main {
+  display: flex;
+  gap: 4.8rem;
+  margin: 6.4rem auto;
+  max-width: 140rem;
+}
+
+.activity-container {
+  flex-direction: column;
+  width: 100%;
+  max-width: 80rem;
+  gap: 0.4rem;
+}
+.recent-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.filter {
+  max-width: 45rem;
+}
+
+.filter-actions {
+  margin: 0 0 2.4rem 0;
+}
+
+.filter-label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.btn-reset__filters {
+  color: #777;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: none;
+  /* font-weight: 600; */
+  cursor: pointer;
+}
+.filter-option {
+  position: relative;
+  background-color: transparent;
+  border: solid 1px #333;
+  border-radius: 4px;
+  height: 5rem;
+  width: 20rem;
+  font-weight: 600;
+  color: #777;
+  gap: 1rem;
+  padding: 0 0.6rem 0 1.6rem;
+  cursor: context-menu;
+}
+.filter-option:hover {
+  background-color: #8a2be2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-option__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+.filter-option__title {
+  font-size: 1.6rem;
+}
+
+.filter-icon__container {
+  background-color: #f7f4fd;
+  border-radius: 100%;
+  height: 3.8rem;
+  width: 3.8rem;
+  color: #8a2be2;
+  font-size: 2.8rem;
+}
+
+@media (max-width: 92em) {
+  .main {
+    margin: 6.4rem 3rem;
+  }
+}
+@media (max-width: 64em) {
+  .main {
+    max-width: 80rem;
+    flex-direction: column-reverse;
+  }
+  .filter-option {
+    background-color: transparent;
+    width: 100%;
+    gap: 1rem;
+  }
+}

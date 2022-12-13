@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1232f849.css",
+    "main.js": "/static/js/main.37c425eb.js",
+    "static/media/NFT_white_polygons.jpg": "/static/media/NFT_white_polygons.36122c7bd86b751ebd88.jpg",
+    "static/media/NFT_blue_glass_abstract.jpg": "/static/media/NFT_blue_glass_abstract.2495ce082f2a0c9c7bda.jpg",
+    "static/media/NFT_blurry_face.jpg": "/static/media/NFT_blurry_face.a321d6d298d385b8fd1a.jpg",
+    "static/media/NFT_blurred_yellow_lights.jpg": "/static/media/NFT_blurred_yellow_lights.de3d19986b8a946ef36e.jpg",
+    "static/media/NFT_water.jpg": "/static/media/NFT_water.49864481e47acaff9e04.jpg",
+    "static/media/NFT_pastelle_palette.jpg": "/static/media/NFT_pastelle_palette.10a31f018fa577983e30.jpg",
+    "static/media/NFT_blue_purple_pattern.jpg": "/static/media/NFT_blue_purple_pattern.50e77a88de189bb091a8.jpg",
+    "static/media/NFT_miami_vibes.jpg": "/static/media/NFT_miami_vibes.e200097748f0057d7842.jpg",
+    "static/media/NFT_fire_trails.jpg": "/static/media/NFT_fire_trails.8449efd639f5e559cabc.jpg",
+    "static/media/NFT_cyan_violet.jpg": "/static/media/NFT_cyan_violet.68944d63ee3165ff89a8.jpg",
+    "static/media/nft_display3.jpg": "/static/media/nft_display3.e068c177f0f8c41e4c49.jpg",
+    "static/media/NFT_vibrant_colors.jpg": "/static/media/NFT_vibrant_colors.10dbba506da5cf33a43b.jpg",
+    "static/media/tate.jpg": "/static/media/tate.e087eada6addc5262f4e.jpg",
+    "static/media/dummy_nft.jpg": "/static/media/dummy_nft.1f0e0d5c828911fdde63.jpg",
+    "static/media/NFT_fire.jpg": "/static/media/NFT_fire.2f1aad3f7ae6469e674f.jpg",
+    "static/media/NFT_blue_rings.jpg": "/static/media/NFT_blue_rings.15bc0de78960cb98c8df.jpg",
+    "static/media/NFT_lightblue_mask.jpg": "/static/media/NFT_lightblue_mask.b8a34f2af2e15c4681cf.jpg",
+    "static/media/NFT_logo.png": "/static/media/NFT_logo.4c6ebe8b0acbc7c4e2c5.png",
+    "static/media/nft_display2.jpg": "/static/media/nft_display2.5fb6d2943123b123c0d6.jpg",
+    "static/media/dummy_nft2.jpg": "/static/media/dummy_nft2.ae303c9b194f7b800444.jpg",
+    "static/media/profileIcon.jpg": "/static/media/profileIcon.0bbe4ef8af2a8023686a.jpg",
+    "index.html": "/index.html",
+    "main.1232f849.css.map": "/static/css/main.1232f849.css.map",
+    "main.37c425eb.js.map": "/static/js/main.37c425eb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1232f849.css",
+    "static/js/main.37c425eb.js"
+  ]
+}

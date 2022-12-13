@@ -1,0 +1,33 @@
+.seller {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 1.2rem;
+  cursor: pointer;
+  width: 20rem;
+}
+
+.img_container {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 6rem;
+  overflow: hidden;
+  background-color: #8364e2;
+  border: solid 3px #8364e2;
+}
+.img {
+  width: 100%;
+  /* object-fit: contain; */
+  object-position: 0px;
+}
+.seller_info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.name {
+  font-size: 1.6rem;
+}
+.price {
+  font-size: 1.4rem;
+}

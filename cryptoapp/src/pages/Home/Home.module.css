@@ -1,0 +1,204 @@
+.hero {
+  background-color: #f7f4fd;
+}
+/*  */
+.hero-content {
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  /* animation: fadeInAnimation 2s ease; */
+}
+
+.hero-h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  width: 60rem;
+  animation: fadeInAnimation 2s ease;
+}
+.hero-message {
+  font-size: 1.6rem;
+  text-align: center;
+  animation: fadeInAnimationSecondary 3s ease;
+}
+.actions {
+  gap: 2.4rem;
+  animation: fadeInAnimationTertiary 3s ease;
+}
+.btn {
+  border: none;
+  border-radius: 6px;
+  font-size: 1.6rem;
+  color: #fff;
+  /* padding: 0.6rem 2rem; */
+  height: 4rem;
+  width: 16rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.btn:hover,
+.btn:focus {
+  outline: none;
+  box-shadow: 2px 2px 20px #8364e260;
+}
+.btn-explore {
+  background-color: #8364e2;
+}
+.btn-create {
+  color: #8364e2;
+  background-color: #fff;
+}
+
+/* collections section */
+.collections {
+  flex-direction: column;
+  background-color: #fff;
+  padding: 8.4rem 0;
+}
+.section-title {
+  font-size: 3.6rem;
+  margin: 0 1rem 4.8rem;
+  text-align: center;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  position: absolute;
+  height: 0.2rem;
+  width: 5rem;
+  background-color: #8364e2;
+  bottom: -12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.carousel {
+  gap: 2.4rem;
+  position: relative;
+}
+
+/* popular items cards */
+
+.popular-items {
+  flex-direction: column;
+  padding: 8.4rem 0;
+}
+
+.card-container {
+  display: grid;
+  max-width: 140rem;
+  gap: 2rem;
+}
+/* will combine and refactor code later-- just getting content on the page for now */
+
+/* top sellers */
+.top-sellers {
+  background-color: #fff;
+  text-align: center;
+  padding: 6.4rem 0;
+}
+
+.seller-container {
+  text-align: left;
+  max-width: 140rem;
+  margin: auto;
+  gap: 2.4rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30rem;
+}
+
+.create {
+  flex-direction: column;
+  padding: 6.4rem 0;
+}
+.btn--explore {
+  text-decoration: none;
+  color: inherit;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+
+/* ============================ */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  30% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInAnimationSecondary {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInAnimationTertiary {
+  0% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(6rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 95em) {
+  .carousel {
+    gap: 2.4rem;
+    position: relative;
+  }
+}
+@media (max-width: 62em) {
+  .carousel {
+    flex-direction: column;
+  }
+}
+@media (max-width: 65em) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .seller-container {
+    max-width: 140rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+}
+@media (max-width: 47em) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-h1 {
+    max-width: 36rem;
+    font-size: 3.6em;
+  }
+}

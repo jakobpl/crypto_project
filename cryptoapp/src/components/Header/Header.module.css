@@ -1,0 +1,143 @@
+/* the mobile view bug is being caused by the home .section-title being positioned relatively */
+
+.header {
+  background-color: initial;
+  color: #0d0c22;
+  margin: auto;
+  padding: 2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  transition: background-color 0.3s;
+}
+.header-logo {
+  height: 4rem;
+  width: 4rem;
+}
+.header-sticky {
+  background-color: #fffffffa;
+  z-index: 10;
+}
+
+.header-search-bar {
+  display: none;
+  background-color: #8364e21a;
+  border: none;
+  border-radius: 6px;
+  height: 3.4rem;
+  width: 27rem;
+  padding: 0.4rem 1rem;
+  /* font-size: 1rem; */
+  font-size: 1.4rem;
+}
+.header-search-bar:focus {
+  outline: none;
+}
+.header-main-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 3.2rem;
+  font-weight: 600;
+  z-index: 10;
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  list-style: none;
+  transition: 0.4s all;
+}
+.nav-link
+/* .nav:link:visited { */ {
+  text-decoration: none;
+  color: #8364e2;
+  font-weight: 600;
+  font-size: 1.6rem;
+  position: relative;
+  padding: 0 0.2rem;
+}
+.nav-link:focus {
+  outline: none;
+}
+.nav-link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: #8364e2;
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.nav-link:hover::before,
+.nav-link:focus::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.btn {
+  margin-left: 2rem;
+  background-color: #8364e2;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.6rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: none;
+  box-shadow: 2px 2px 20px #8364e260;
+}
+.menu-btn {
+  display: none;
+}
+.menu-active {
+  transform: translate(-100%, 0);
+}
+
+@media (max-width: 47em) {
+  .menu-btn {
+    display: inline-block;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav-ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    gap: 2.4rem;
+    overflow-y: hidden;
+  }
+  .nav-link,
+  .btn {
+    font-size: 2.4rem;
+  }
+  .btn {
+    margin: 0;
+  }
+}
